@@ -8,7 +8,7 @@ Axios.interceptors.response.use(
   async function(error) {
     const status = error.response.data.error.status;
 
-    if (status === 401) authorize();
+    // if (status === 401) authorize();
 
     return Promise.reject(error);
   }
